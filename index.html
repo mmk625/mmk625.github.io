@@ -2,48 +2,62 @@
 <html lang="zh-TW">
 <head>
     <title>MoMoKuma</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image/icon.png">
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
     <style>
         body {
             font-family: "Segoe UI",Arial,sans-serif;
+            background-color:gray;
+        }
+        
+        #back{
+            background-image:url(image/center.png);
+            background-size: cover;
+            background-position: 50% 50%;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -10;
+        }
+        #title{
+            position: relative;
+            text-align:center;
+            color:yellow;
+            font-size:300%;
+            z-index: 10;
+        }
+        #into{
+            float:bottom;
+            z-index: 10;
+        }
+        a{
+            margin:30% auto auto 48.5%;
+            width: 10px;
+            display:block;
+        }
+        img{
+            text-align: center;
+            display: block;
         }
     </style>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
-        var x = 0;
-		var timer = window.setInterval(trashFunction,500);
-		function trashFunction(){
-			x += 1;
-			switch(x){
-				case 1:
-					document.getElementById("trash").style.color="red";
-					break;
-				case 2:
-					document.getElementById("trash").style.color="orange";
-					break;
-				case 3:
-					document.getElementById("trash").style.color="yellow";
-					break;
-                case 4:
-                    document.getElementById("trash").style.color="green";
-					break;
-                case 5:
-                    document.getElementById("trash").style.color="blue";
-					break;
-                case 6:
-                    document.getElementById("trash").style.color="purple";
-					break;
-				default:
-					document.getElementById("trash").style.color="black";
-					x = 0;
-			}	
-		}
-    </script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div3").fadeToggle(3000);
+            });
+        });
+    </script>-->
 </head>
-<body style="background-color:gray">
-    <div style="text-align:center;color:yellow;font-size:300%"><span style="color:red;">Mo</span><span style="color:orange;">Mo</span>Kuma
-    </div><br><br><br><br>
-    <div id="trash" style="font-size:500%;text-align:center;color:black;">我就懶，懶的寫</div>
-    <br><br><br><br>
-    <div align="center"><button onclick="alert('跟你說不要按我！')" >不要按我</button></div>
+<body>
+    <div id="back"></div>
+    <div id="title"><span style="color:red;">Mo</span><span style="color:orange;">Mo</span>Kuma</div>
+    <div id="into">
+        <a href="test.html">
+            <img src="image/icon.png">
+        </a>
+    </div>
 </body>
 </html>
