@@ -37,19 +37,23 @@
     }
     #nav{
         position: fixed;
+<<<<<<< HEAD
         top: 50%;
+=======
+        top:50%;
+>>>>>>> addImage
         left: 0px;
         width:100%
     }
     #left{
         float:left;
         margin-left:1%;
-        font-size:300%;
+        font-size:150%;
     }
     #right{
         float:right;
         margin-right:1%;
-        font-size:300%;
+        font-size:150%;
     }
     #title{
         margin-top:5%;
