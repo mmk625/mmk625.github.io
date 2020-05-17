@@ -1,3 +1,5 @@
+//git pull --rebase
+//git push origin HEAD:refs/heads/master
 //var index_timer = window.setInterval(indexIMG,5000);
 var x = 0;
 function imgchange(text){
