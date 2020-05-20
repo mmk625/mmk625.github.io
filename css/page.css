@@ -1,0 +1,67 @@
+body{
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+.backimg{
+    background-image:url(../image/2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+}
+a{
+    text-decoration: none;
+}
+#top{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    flex: 1;
+    float: left;
+    font-size: 300%;
+}
+.navlist{
+    flex: 1;
+}
+.navlist ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navlist ul li{
+    display: list-item;
+    margin-right: 1%;
+    border: 1px gray solid;
+    border-radius: 1px;
+    list-style-type: none;
+    text-align: center;
+    
+}
+.navlist ul li a{
+    color: white;
+    font-size:20px;
+    padding: 0px 16px;
+}
+@media only screen and (max-width: 730px){
+    .navlist{display:none}
+}
+.main{
+    margin:5% 5%; 
+    background-color: white;
+}
+#imgurl{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    z-index:10;
+}
+#discordurl{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    z-index:10;
+}
