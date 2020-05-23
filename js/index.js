@@ -19,7 +19,7 @@ function mouse_over(check){
 
 function imgchange(text){
     var imglist = document.getElementsByTagName('li');
-    if(status == 0){
+    if(status == 0 || text == "right"){
         if(x == 0)imglist[imglist.length-1].className = 'imgnone';
         else imglist[x-1].className = 'imgnone'; 
         imglist[x].className = 'imghide';
@@ -32,13 +32,6 @@ function imgchange(text){
         imglist[x].className = 'imghide';
         x--;
         if(x < 0)x = imglist.length-1;
-        imglist[x].className = 'imgshow';
-    }else if(text == "right"){
-        if(x == 0)imglist[imglist.length-1].className = 'imgnone';
-        else imglist[x-1].className = 'imgnone'; 
-        imglist[x].className = 'imghide';
-        x++;
-        if(x > imglist.length-1)x = 0;
         imglist[x].className = 'imgshow';
     }
 }
