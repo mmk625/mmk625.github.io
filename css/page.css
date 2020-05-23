@@ -1,11 +1,11 @@
 body{
-    font-family: "Segoe UI",Arial,sans-serif;
+    font-family: cooper,"Segoe UI",Arial,sans-serif;
 }
 .backimg{
-    background-image:url(../image/2.png);
+    background-image: url(../image/2.png);
     background-size: cover;
     background-position: 50% 50%;
-    position: fixed;
+    position: fixed;    
     width: 100%;
     height: 100%;
     top: 0px;
@@ -18,6 +18,7 @@ a{
 #top{
     display: flex;
     flex-direction: row;
+    z-index: 10;
 }
 .title{
     flex: 1;
@@ -39,29 +40,93 @@ a{
     border-radius: 1px;
     list-style-type: none;
     text-align: center;
-    
+}
+.navlist ul li:hover{
+    background-color: #a16868;
 }
 .navlist ul li a{
     color: white;
     font-size:20px;
     padding: 0px 16px;
 }
-@media only screen and (max-width: 730px){
-    .navlist{display:none}
+.navimg{
+    display:none;
+    justify-content: flex-end;
 }
-.main{
-    margin:5% 5%; 
-    background-color: white;
-}
-#imgurl{
-    position:fixed;
+.menu_navlist{
+    display: flex;
+    position: fixed;
+    top: 0;
     right: 0;
-    bottom: 0;
+    
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 768px){
+    .navlist ul{
+        flex-direction: column;
+        display:none;
+    }
+    .navimg{
+        display: flex;
+    }
+}
+
+.photobackground{
+    background-image: url(../image/background.jpg);
+    width: 75%;
+    height: 75%;
+    border: 10px solid #7b4937;
+    margin:20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.photo {
+    display:block;
+    background-color: white;
+    width: 248px;
+    height: 324px;
+    border: 1px solid black;
+    margin:10px 5%;
+}
+.photo img{
+    display: block;
+    margin: 30px auto 10px auto;
+    border: 1px solid black;
+}
+.phototext{
+    display: block;
+    margin-top:50px;
+    text-align: center;
+    font-size: 15px;;
+}
+
+#imgurl{
+    position: fixed;
+    right:0;
+    bottom:0;
     z-index:10;
 }
 #discordurl{
-    position:fixed;
-    left: 0;
-    bottom: 0;
+    position: fixed;
+    left:0;
+    bottom:0;
     z-index:10;
+}
+@media only screen and (max-width: 1460px){
+    #imgurl{
+        position: static;
+        float: right;
+    }
+    #discordurl{
+        position: static;
+        float: left;
+    }
+}
+@media only screen and (max-width: 866px){
+    #imgurl,#discordurl{
+        float: none;
+        display: flex;
+        justify-content: space-around;
+    }
 }
