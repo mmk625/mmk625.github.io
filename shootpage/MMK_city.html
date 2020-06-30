@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <title>MoMoKuma</title>
+    <link rel="icon" href="../image/icon.png">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+    <link href="shootpage.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <script src="../js/page.js"></script>
+    <script src="shootpage.js"></script>
+</head>
+<body>
+    <div id="topmargin"></div>
+    <div class="backimg"></div>
+    <div id="top">
+        <div class="title">
+            <a href="../index.html" title="往首頁">
+                <span style="color:red;">Mo</span><span style="color:orange;">Mo</span><span style="color:yellow;">Kuma</span>
+            </a>
+        </div>
+        <div class="nav">
+            <div id="menu" class="navimg_show_open"><img src="../image/nav.png" width="64px" height="64px" onclick="nav_click('open')"></div>
+            <div id="cross" class="navimg_show_close"><img src="../image/cross.png" width="64px" height="64px" onclick="nav_click('close')"></div>
+            <ul id="navlist" class="navlist">
+                <li><a href="../index.html">首頁</a></li>
+                <li><a href="../about.html">關於</a></li>
+                <li><a href="../shoot.html">攝影</a></li>
+                <li><a href="../plan.html">計畫</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="phototext">
+            <span style="color:red">M</span><span style="color:orange">M</span><span style="color:yellow">K</span> City
+        </div> 
+        <div class="photoborder">
+            <div id="photo_list">
+                <div id="left_arrow" class="arrow" onclick="imgchange('left')"></div>
+                <img id="photo" src="../image/7.png" class="imgshow" title="shoot by kyL_lee">
+                <img id="photo" src="../image/8.png" class="imgnone" title="shoot by kyL_lee">
+                <div id="right_arrow" class="arrow" onclick="imgchange('right')"></div>
+            </div>
+            <div id="photo_count">Number/ALLCount</div>
+            <div id="bottom_text">滑鼠移至照片上已顯示拍攝者</div>
+        </div>
+    </div>
+    <div id="discordurl">
+        <a href="https://discord.gg/UzvFJeE">
+            <img title="Discord連結" src="https://discordapp.com/api/guilds/441614562534359050/widget.png?style=banner2">
+        </a>
+    </div>
+    <div id="imgurl">
+        <a href="../index.html">
+            <img title="往首頁" src="../image/icon2.png" width="64px" height="64px">
+        </a>
+    </div>
+</body>
+</html>

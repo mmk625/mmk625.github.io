@@ -14,6 +14,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 #top{
     position: fixed;
@@ -132,37 +133,6 @@ a{
         left: 100%;
     }
 }
-
-.photobackground{
-    background-image: url(../image/background.jpg);
-    width: 75%;
-    height: 75%;
-    border: 10px solid #7b4937;
-    margin:20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.photo {
-    display:block;
-    background-color: white;
-    width: 248px;
-    height: 324px;
-    border: 1px solid black;
-    margin:10px 5%;
-}
-.photo img{
-    display: block;
-    margin: 30px auto 10px auto;
-    border: 1px solid black;
-}
-.phototext{
-    display: block;
-    margin-top:50px;
-    text-align: center;
-    font-size: 15px;;
-}
-
 #imgurl{
     position: fixed;
     right:0;
@@ -190,5 +160,8 @@ a{
         float: none;
         display: flex;
         justify-content: space-around;
+    }
+    .title{
+        font-size: 250%;
     }
 }
