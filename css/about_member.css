@@ -1,0 +1,15 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+main div div{
+    color:rgb(109, 109, 255);
+    font-size: 30px;
+}
+main div span{
+    color:white;
+    font-size: 20px;
+}
