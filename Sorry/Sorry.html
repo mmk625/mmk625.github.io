@@ -39,7 +39,7 @@
 
         function check_time() {
             var nowtime = new Date()
-            var endtime = new Date('2020/11/08 18:00:00')
+            var endtime = new Date('2020/11/09 18:00:00')
             last_time = new Date(endtime - nowtime);
             time_text = zeroinsert(parseInt(last_time/1000/60/60)) + ":" + zeroinsert(last_time.getMinutes()) + ":" + zeroinsert(last_time.getSeconds());
             document.getElementById('bottom').innerHTML = "此篇文章將在 " + time_text + " 後刪除！"
